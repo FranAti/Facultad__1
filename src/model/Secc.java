@@ -1,5 +1,5 @@
 package model;
 
 public enum Secc {
-Biblioteca,Decanato,Secretaria;
+BIBLIOTECA,DECANATO,SECRETARIA,MANTENIMIENTO;
 }

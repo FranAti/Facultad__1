@@ -1,17 +1,24 @@
 package model;
 
 public class Estudiante extends Persona {
-    public Estudiante(String nombre, String apellido, String dni, Est_civ estado) {
-        super(nombre, apellido, dni, estado);
-    }
-    //Curso podria ser un enum tambien, con todos los cursos que hay.
     private String curso;
+    public Estudiante(String nombre, String apellido, String dni, Est_civ estado,String curso) {
+        super(nombre, apellido, dni, estado);
+        this.curso = curso;
+    }
 
     public String getCurso() {
         return curso;
     }
-    public void setCurso(String curso) {
+    //Matriculación de un estudiante en un nuevo curso.
+    //Esto es un poco ambiguo, no se si refiere a solapando el actual
+    //o cursando los dos a la vez
+    //Voy a hacerlo solapando
+    public void cambioDeCurso(String curso) {
         this.curso = curso;
     }
-
+    @Override
+    public String toString() {
+        return super.toString()+", Curso: "+curso;
+    }
 }

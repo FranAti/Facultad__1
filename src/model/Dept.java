@@ -1,5 +1,5 @@
 package model;
 
 public enum Dept {
-    Lenguajes,Matematicas,Arquitectura;
+    LENGUAJES,MATEMATICAS,FISICA,INFORMATICA,ARQUITECTURA;
 }

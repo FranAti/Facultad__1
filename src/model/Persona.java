@@ -9,6 +9,7 @@ public class Persona {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
+        this.estado = estado;
     }
     public String getNombre() {
         return nombre;
@@ -26,4 +27,15 @@ public class Persona {
         return dni;
     }
 
+    public Est_civ getEstado() {
+        return estado;
+    }
+    public void cambiarEstado(Est_civ estado) {
+        this.estado = estado;
+    }
+    @Override
+    public String toString() {
+        return "Datos: "+nombre+" "+apellido+", DNI: "+dni+", Estado civil: "+estado;
+    }
 }
+
